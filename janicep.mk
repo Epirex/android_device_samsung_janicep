@@ -1,5 +1,5 @@
 # Include common makefile
-$(call inherit-product, device/samsung/u8500-common/common.mk)
+$(call inherit-product, device/samsung/u8500-common/u8500.mk)
 
 LOCAL_PATH := device/samsung/janicep
 JANICE_PATH := device/samsung/janice
@@ -10,10 +10,6 @@ DEVICE_PACKAGE_OVERLAYS += $(JANICE_PATH)/overlay
 # STE
 PRODUCT_COPY_FILES += \
     $(JANICE_PATH)/configs/ste_modem.sh:system/etc/ste_modem.sh
-
-# Enable AAC 5.1 output
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -50,6 +46,7 @@ PRODUCT_PACKAGES += \
     libnfc_jni \
     Nfc \
     Tag
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/NFC/nfcee_access.xml:system/etc/nfcee_access.xml \
     packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
@@ -58,4 +55,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # Use non-open-source parts if present
-$(call inherit-product-if-exists, vendor/samsung/u8500-common/janice/janicep-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/samsung/u8500/janice/janicep-vendor-blobs.mk)

@@ -1,12 +1,10 @@
--include device/samsung/u8500-common/BoardCommonConfig.mk
+-include device/samsung/u8500-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := janicep,i9070P,GT-I9070P
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/u8500
-TARGET_KERNEL_CONFIG := cyanogenmod_i9070P_defconfig
-#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
-ARM_EABI_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin
+TARGET_KERNEL_CONFIG := janicep_defconfig
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/janicep/bluetooth

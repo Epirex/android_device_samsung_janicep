@@ -31,6 +31,8 @@ ste.cam.back.orientation=90
 # STE: Camera file path configuration
 ste.cam.ext.cfg.path.secondary=/system/usr/share/camera/config_file/samsung_s5k4ecgx_janice.dat
 
+media.aac_51_output_enabled=true
+
 # Hardware info
 ro.device.chipset=ST-Ericsson NovaThor U8500 (45nm)
 ro.device.cpu=ARMv7 1GHz Dual-core ARM Cortex-A9
