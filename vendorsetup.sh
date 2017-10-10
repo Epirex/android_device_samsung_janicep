@@ -1,2 +1,2 @@
-add_lunch_combo cm_janicep-eng
-add_lunch_combo cm_janicep-userdebug
+add_lunch_combo lineage_janicep-eng
+add_lunch_combo lineage_janicep-userdebug

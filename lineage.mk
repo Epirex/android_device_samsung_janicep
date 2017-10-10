@@ -8,7 +8,7 @@ PRODUCT_RELEASE_NAME := GT-I9070P
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
+# Inherit some common Lineage OS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := janicep
-PRODUCT_NAME := cm_janicep
+PRODUCT_NAME := lineage_janicep
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9070P
 PRODUCT_MANUFACTURER := samsung
